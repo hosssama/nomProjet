@@ -8,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class FirstComponent implements OnInit {
 
   show = false;
-  color = 'darkorchid';
+  defaultcolor = 'white';
+  color = this.defaultcolor;
 
   constructor() {
   }
@@ -23,5 +24,9 @@ export class FirstComponent implements OnInit {
 
   changerCouleur(couleur) {
     this.color = couleur ;
+  }
+
+  setDefaultcouleur() {
+    this.color = this.defaultcolor;
   }
 }
