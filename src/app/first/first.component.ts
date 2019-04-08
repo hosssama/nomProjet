@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-first',
@@ -8,8 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class FirstComponent implements OnInit {
 
   show = false;
-  defaultcolor = 'white';
+  @Input() defaultcolor = 'white';
   color = this.defaultcolor;
+
+  nom: string;
+  prenom: string;
 
   constructor() {
   }
