@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FirstComponent implements OnInit {
 
-  constructor() { }
+  show = false;
+
+  constructor() {
+  }
 
   ngOnInit() {
   }
 
+
+  showhide() {
+    this.show = !this.show;
+
+  }
 }
