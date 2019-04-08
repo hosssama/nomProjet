@@ -1,5 +1,9 @@
-<p #monParagraphe [hidden]="show">
+<p #monParagraphe [style.background-color]="color" [hidden]="show">
   first works!
 </p>
 
-<button class="btn btn-primary"  (click)="showhide()">show</button>
+<button class="btn btn-primary"  (click)="showhide(monParagraphe)">show</button>
+
+<input  type="text" #input (change)="changerCouleur(input.value)">
+
+

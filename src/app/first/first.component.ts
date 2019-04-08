@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class FirstComponent implements OnInit {
 
   show = false;
+  color = 'darkorchid';
 
   constructor() {
   }
@@ -16,8 +17,11 @@ export class FirstComponent implements OnInit {
   }
 
 
-  showhide() {
+  showhide(pgphe) {
     this.show = !this.show;
+  }
 
+  changerCouleur(couleur) {
+    this.color = couleur ;
   }
 }
