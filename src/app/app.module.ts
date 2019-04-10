@@ -5,12 +5,14 @@ import {FormsModule} from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FirstComponent } from './first/first.component';
+import { NgStyleComponent } from './directives/ng-style/ng-style.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    FirstComponent
+    FirstComponent,
+    NgStyleComponent
   ],
   imports: [
     BrowserModule,

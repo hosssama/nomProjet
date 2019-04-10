@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-first',
@@ -10,6 +10,7 @@ export class FirstComponent implements OnInit {
   show = false;
   @Input() defaultcolor = 'white';
   color = this.defaultcolor;
+  @Output() sonColor = new EventEmitter();
 
   nom: string;
   prenom: string;
@@ -31,5 +32,11 @@ export class FirstComponent implements OnInit {
 
   setDefaultcouleur() {
     this.color = this.defaultcolor;
+  }
+
+  sendDataToDad() {
+    this.sonColor.emit(
+      this.color
+    ) ;
   }
 }
