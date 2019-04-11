@@ -6,13 +6,21 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FirstComponent } from './first/first.component';
 import { NgStyleComponent } from './directives/ng-style/ng-style.component';
+import { TestDirective } from './test.directive';
+import { TestPiprPipe } from './test-pipr.pipe';
+import { TodoComponent } from './todo/todo.component';
+import { HeaderComponent } from './header/header.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     FirstComponent,
-    NgStyleComponent
+    NgStyleComponent,
+    TestDirective,
+    TestPiprPipe,
+    TodoComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
